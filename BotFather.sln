@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotFather", "BotFather\BotFather.csproj", "{0BEF1666-55DE-421D-BDDF-DDBBEC40C267}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{C262AC8E-484B-49C9-AE91-44C976ACA4D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{981A6414-658E-4769-8657-8BF55C890A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMultiBot", "SimpleMultiBot\SimpleMultiBot.csproj", "{DF0F39D7-ADBB-4353-8C80-E91C2669224F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{0BEF1666-55DE-421D-BDDF-DDBBEC40C267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BEF1666-55DE-421D-BDDF-DDBBEC40C267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BEF1666-55DE-421D-BDDF-DDBBEC40C267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0F39D7-ADBB-4353-8C80-E91C2669224F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0F39D7-ADBB-4353-8C80-E91C2669224F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0F39D7-ADBB-4353-8C80-E91C2669224F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0F39D7-ADBB-4353-8C80-E91C2669224F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BEF1666-55DE-421D-BDDF-DDBBEC40C267} = {C262AC8E-484B-49C9-AE91-44C976ACA4D5}
+		{DF0F39D7-ADBB-4353-8C80-E91C2669224F} = {981A6414-658E-4769-8657-8BF55C890A40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22026F4D-0BD0-4D60-B8D6-7AC18B905053}
