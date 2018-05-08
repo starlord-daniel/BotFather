@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BotFather.Model
+namespace Bot.Unification.Model
 {
     public class ConversationInfo
     {

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Bot.Unification.Main;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder.BotFramework;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
@@ -22,13 +23,16 @@ namespace Microsoft.Bot.Samples
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public async void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_ => Configuration);
-            services.AddBot<HelloBot>(options =>
+            services.AddBot<MainBot>(options =>
             {
                 options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
             });
+
+            // Thanks for the help: https://blogs.msdn.microsoft.com/mihansen/2017/09/10/managing-secrets-in-net-core-2-0-apps/
+            await BotFather.PopulateBotData(Configuration["bot-data"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

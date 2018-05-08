@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>6b1822ec-6fce-4043-a2a6-301133ac466d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BotFather\BotFather.csproj" />
+    <ProjectReference Include="..\BotFather\Bot.Unification.csproj" />
   </ItemGroup>
 
 </Project>

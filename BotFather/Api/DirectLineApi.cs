@@ -1,4 +1,4 @@
-﻿using BotFather.Model;
+﻿using Bot.Unification.Model;
 using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 using System;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BotFather.Api
+namespace Bot.Unification.Api
 {
     public static class DirectLineApi
     {

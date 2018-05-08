@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bot.Unification.Main;
 
 namespace Microsoft.Bot.Samples
 {
@@ -12,26 +13,7 @@ namespace Microsoft.Bot.Samples
     {
         public async Task OnTurn(ITurnContext context)
         {
-            if (context.Activity.Type is ActivityTypes.Message)
-            {
-                if (BotFather.CurrentBot)
-                {
-                    // Put in an exit statement
-                    if(context.Activity.Text == "exit")
-                    {
-                        BotFather.ExitCurrentBot();
-                    }
-                    else
-                    {
-                        BotFather.HandleBotMessage();
-                    }
-                    
-                }
-                else
-                {
-                    BotFather.DisplaySelectionMessage();
-                }
-            }
+            await BotFather.StartMultiBotConversation(context);
         }
     }
 }
